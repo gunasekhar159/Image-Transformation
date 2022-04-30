@@ -4,25 +4,35 @@ To perform image transformation such as Translation, Scaling, Shearing, Reflecti
 
 ## Software Required:
 Anaconda - Python 3.7
-
 ## Algorithm:
-### Step1:
-<br>
+Step 1:
+Import the necessary libraries and read the original image and save it as a image variable.
 
-### Step2:
-<br>
+Step 2:
+Translate the image using M=np.float32([[1,0,20],[0,1,50],[0,0,1]]) translated_img=cv2.warpPerspective(input_img,M,(cols,rows))
 
-### Step3:
-<br>
+Step 3:
+Scale the image using M=np.float32([[1.5,0,0],[0,2,0],[0,0,1]]) scaled_img=cv2.warpPerspective(input_img,M,(cols,rows))
 
-### Step4:
-<br>
+Step 4:
+Shear the image using M_x=np.float32([[1,0.2,0],[0,1,0],[0,0,1]]) sheared_img_xaxis=cv2.warpPerspective(input_img,M_x,(cols,rows))
 
-### Step5:
-<br>
+Step 5:
+Reflection of image can be achieved through the code M_x=np.float32([[1,0,0],[0,-1,rows],[0,0,1]]) reflected_img_xaxis=cv2.warpPerspective(input_img,M_x,(cols,rows))
+
+Step 6:
+Rotate the image using angle=np.radians(45) M=np.float32([[np.cos(angle),-(np.sin(angle)),0],[np.sin(angle),np.cos(angle),0],[0,0,1]]) rotated_img=cv2.warpPerspective(input_img,M,(cols,rows))
+
+Step 7:
+Crop the image using cropped_img=input_img[20:150,60:230]
+
+Step 8:
+Display all the Transformed images and end the program.
+
 PROGRAM:
 Developed By: M.GUNASEKHAR
 Register Number: 212221240061
+```
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -32,7 +42,7 @@ plt.axis('off')
 plt.imshow(input_image)
 plt.show()
 rows,cols,dim = input_image.shape
-```
+
 # i)Image Translation
 M = np.float32([[1,0,100],
                [0,1,200],
@@ -100,29 +110,31 @@ plt.imshow(cropped_image)
 plt.show()
 ```
 ## Output:
+original image:
+![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/G.png)
 ### i)Image Translation
-![OUTPUT]
+![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/U.png)
 
 
 ### ii) Image Scaling
+![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/N.png)
 
-![OUTPUT]
 
 
 
 
 ### iii)Image shearing
 
-![OUTPUT]
+![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/A.png)
 
 
 
 
 ### iv)Image Reflection
 
-![OUTPUT]
+![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/E1.png)
 
-![OUTPUT]
+![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/E2.png)
 
 
 
@@ -130,9 +142,9 @@ plt.show()
 
 ### v)Image Rotation
 
-![OUTPUT]
+![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/K.png)
 
-![OUTPUT]
+
 
 
 
@@ -140,9 +152,9 @@ plt.show()
 
 ### vi)Image Cropping
 
-![OUTPUT]
+![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/H.png)
 
-![OUTPUT]
+
 
 
 
