@@ -111,7 +111,7 @@ plt.imshow(cropped_image)
 plt.show()
 ```
 ## Output:
-original image:
+ ## original image:
 
 ![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/G.png)
 
