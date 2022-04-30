@@ -30,9 +30,10 @@ Step 8:
 Display all the Transformed images and end the program.
 
 PROGRAM:
+```
 Developed By: M.GUNASEKHAR
 Register Number: 212221240061
-```
+
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
