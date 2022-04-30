@@ -112,12 +112,16 @@ plt.show()
 ```
 ## Output:
 original image:
+
 ![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/G.png)
+
 ### i)Image Translation
+
 ![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/U.png)
 
 
 ### ii) Image Scaling
+
 ![OUTPUT](https://github.com/gunasekhar159/Image-Transformation/blob/main/N.png)
 
 
